@@ -41,10 +41,9 @@ function generateMatrix() {
 	for (let i = 0; i <= rows + 1; i++) {
   		gridMatrix[i] = [];
   		for (let j = 0; j <= cols + 1; j++) {
-    		gridMatrix[i][j] = 0;
+    			gridMatrix[i][j] = 0;
   		}
 	}
-	console.log(gridMatrix);
 }
 
 function randomMines() {
@@ -63,8 +62,8 @@ function randomMines() {
 function updateGameBoard() {
 	for (let i = 1; i <= rows; i++) {
   		for (let j = 1; j <= cols; j++) {
-    		document.getElementById(`${i}-${j}`).innerHTML = gridMatrix[i][j];
-    		document.getElementById(`${i}-${j}`).style.backgroundColor = "white";
+    			document.getElementById(`${i}-${j}`).innerHTML = gridMatrix[i][j];
+    			document.getElementById(`${i}-${j}`).style.backgroundColor = "white";
   		}
 	}
 }
